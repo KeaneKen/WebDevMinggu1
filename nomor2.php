@@ -1,8 +1,8 @@
 <?php
-function lol(array $array1, array $array2): string {
+function lol(array $nums1, array $nums2): string {
     // Filter out placeholder zeros from the first array to get the actual elements
-    $first = array_values(array_filter($array1, function($v) { return $v !== 0; }));
-    $second = array_values($array2);
+    $first = array_values(array_filter($nums1, function($v) { return $v !== 0; }));
+    $second = array_values($nums2);
 
     // (both inputs are assumed sorted)
     $i = 0; $j = 0;
